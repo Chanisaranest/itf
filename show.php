@@ -14,18 +14,18 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <table style="padding-top: 50px; padding-left: 100px;" width="600" border="1">
   <tr>
-    <th width="100"> <div align="center">Name</div></th>
-    <th width="350"> <div align="center">Comment </div></th>
-    <th width="150"> <div align="center">Link </div></th>
+    <th width="100" style="color : B6E3E9;"> <div align="center">Name</div></th>
+    <th width="350" style="color : C3DDE0;"> <div align="center">Comment </div></th>
+    <th width="150" style="color : 7CCED1;"> <div align="center">Link </div></th>
   </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td><?php echo $Result['Name'];?></div></td>
-    <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['Link'];?></td>
+    <td style="color: C4E4F4;"><?php echo $Result['Name'];?></div></td>
+    <td style="color: ABBDEE;"><?php echo $Result['Comment'];?></td>
+    <td style="color: E7D2EF;"><?php echo $Result['Link'];?></td>
   </tr>
 <?php
 }

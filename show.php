@@ -12,7 +12,7 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<table style="padding-top: 50px; padding-left: 100px;" width="600" border="1">
+<table style="margin: auto;" width="1000" border="1">
   <tr>
     <th width="250" style="background-color : B6E3E9;"> <div align="center">Name</div></th>
     <th width="350" style="background-color : C3DDE0;"> <div align="center">Comment </div></th>
@@ -27,7 +27,7 @@ while($Result = mysqli_fetch_array($res))
     <td style="background-color: C4E4F4;"><?php echo $Result['Name'];?></div></td>
     <td style="background-color: ABBDEE;"><?php echo $Result['Comment'];?></td>
     <td style="background-color: B9E3AE;"><?php echo $Result['Link'];?></td>
-    <td style="background-color: E7D2EF;"><button type ='submit' style="background-color:FAAE9F;"><a href="delete.php?id=<?=$Result['id'];?>">Detele</a></button></td>
+    <td style="background-color: E7D2EF;"><button type ='submit' style="background-color:FAAE9F;"><a href="delete.php?id=<?=$Result['id'];?>">Detele</a></button><button type ='submit' style="background-color:FAAE9F;><a href="formedit.php?id=<?=$Result['id'];?>">Edit</a></button></td>
   </tr>
 <?php
 }

@@ -27,7 +27,7 @@ while($Result = mysqli_fetch_array($res))
     <td style="background-color: C4E4F4;"><?php echo $Result['Name'];?></div></td>
     <td style="background-color: ABBDEE;"><?php echo $Result['Comment'];?></td>
     <td style="background-color: B9E3AE;"><?php echo $Result['Link'];?></td>
-    <td style="background-color: E7D2EF;"><button type ='submit' style="background-color:FAAE9F;"><a href="delete.php?id=<?=$Result['id'];?>">Detele</a></button><button type ='submit' style="background-color:FAAE9F;><a href="formedit.php?id=<?=$Result['id'];?>">Edit</a></button></td>
+    <td style="background-color: E7D2EF;"><button type ='submit' style="background-color:FAAE9F;"><a href="delete.php?id=<?=$Result['id'];?>">Detele</a></button><button type ='submit' style="background-color:FAAE9F;"><a href="formedit.php?id=<?=$Result['id'];?>">Edit</a></button></td>
   </tr>
 <?php
 }
